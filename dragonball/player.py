@@ -59,7 +59,7 @@ class Player:
         return self.energy
     
     def getLife(self):
-        return self.life
+        return self.life if self.life >= 0 else 0
         
     def setAtk(self, num):
         self.atk = num
